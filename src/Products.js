@@ -30,7 +30,7 @@ let Products=(props)=>
      { 
       props.item.map(i =>{if(filter.length == 0){
         return (
-          <div className="container">
+          <div key={i.id}className="container">
                 <div className="content">
                     <div className="top">
                     <h3>{i.model}</h3>
@@ -51,7 +51,7 @@ let Products=(props)=>
       }else{
         if(filter.indexOf(i.inch) !==-1 || filter.indexOf(i.name) !==-1 || filter.indexOf(i.Screen) !==-1){
           return (
-            <div className="container">
+            <div key={i.id} className="container">
                   <div className="content">
                       <div className="top">
                       <h3>{i.model}</h3>

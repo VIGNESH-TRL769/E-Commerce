@@ -29,7 +29,7 @@ let Viewpage=(props)=>
             props.item.map(i =>
                 {
                 return(
-                    <div className="container">
+                    <div key={i.id} className="container">
                         <div className="content">
                             <div className="top">
                             <h3>{i.model}</h3>
