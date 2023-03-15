@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import { cartContext } from './App';
 let Card=(props)=>
 {
-    const {newArray,setMyArray} = useContext(cartContext)
+    const {newArray} = useContext(cartContext)
     
     return(
         

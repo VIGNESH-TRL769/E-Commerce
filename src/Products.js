@@ -1,7 +1,6 @@
 import './body_right.css'
-import { cartContext } from './App';
+import { cartContext, filterContext } from './App';
 import { useContext } from 'react';
-import { filterContext } from './App'
 
 let update=(i,newArray,setMyArray)=>
 {
@@ -17,9 +16,14 @@ let update=(i,newArray,setMyArray)=>
   }
   console.log(newArray)
 }
+
+const callbutton = (array,id) =>{
+  
+  return array.indexOf(id)===-1;
+}
 let Products=(props)=>
 {
-  const {filter,SetFilter} = useContext(filterContext)
+  const {filter} = useContext(filterContext)
     const {newArray,setMyArray} = useContext(cartContext)
     return(
     <div className="body_right">
@@ -38,14 +42,14 @@ let Products=(props)=>
                     <p className="price"><b>{i.Rate}</b></p>
                     </div>
                     <div className="cart">
-                    <button className="addcart" onClick={()=>update(i,newArray,setMyArray)}>Add To Cart</button>
+                    <button className="addcart" onClick={()=>update(i,newArray,setMyArray)}>{callbutton(newArray,i)?"Add To Cart":"Remove To Cart"}</button>
                     <button className="buycart"><b>Buy Now</b></button>
                     </div>
                 </div>
             </div>
         )
       }else{
-        if(filter.indexOf(i.inch) !=-1 || filter.indexOf(i.name) !=-1 || filter.indexOf(i.Screen) !=-1){
+        if(filter.indexOf(i.inch) !==-1 || filter.indexOf(i.name) !==-1 || filter.indexOf(i.Screen) !==-1){
           return (
             <div className="container">
                   <div className="content">
@@ -59,7 +63,7 @@ let Products=(props)=>
                       <p className="price"><b>{i.Rate}</b></p>
                       </div>
                       <div className="cart">
-                      <button className="addcart" onClick={()=>update(i,newArray,setMyArray)}>Add To Cart</button>
+                      <button className="addcart" onClick={()=>update(i,newArray,setMyArray)}>{callbutton(newArray,i)?"Add To Cart":"Remove To Cart"}</button>
                       <button className="buycart"><b>Buy Now</b></button>
                       </div>
                   </div>

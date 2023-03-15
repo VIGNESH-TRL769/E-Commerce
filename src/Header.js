@@ -12,8 +12,8 @@ let Header=(props)=>
           <p>Home</p>
           <p>About</p>
           <p>Contact</p>
-          <p>Contact</p>
-          <p>Contact</p>
+          <p>Category</p>
+          <p>Login</p>
         </div>
         <div>
             <Card></Card>

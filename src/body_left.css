@@ -41,6 +41,7 @@
     border-radius: 5px;
     background-color: #FFC300;
     border: 3px solid black;
+    cursor: pointer;
 }
 
 .inches button
@@ -50,6 +51,7 @@
    background-color: #FFC300;
    border-radius: 5px;
    border: 3px solid black;
+   cursor: pointer;
 
 }
 .inches button:hover
@@ -60,16 +62,32 @@
 {
     background-color: #FF5733;
 }
-.brand a,.screen a,.inches a
+.inches p
 {
-    text-decoration: none;
-    color: white;
+    cursor: pointer;
 }
 .prevbutton
 {
     position: relative;
+    border: none;
+    border-radius: 5px;
     margin-top: 150px;
-    
-    width: 60px;
-    height: 30px;
+    margin-left: 20px;
+    background-color: #FF5733;
+    width: 80px;
+    height: 40px;
+}
+.prevbutton:hover
+{
+    background-color: black;
+    color: white;
+}
+.brand p
+{
+    cursor: pointer;
+
+}
+.brand P:hover
+{
+    color: #FF5733;
 }

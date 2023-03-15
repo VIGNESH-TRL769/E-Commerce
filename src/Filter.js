@@ -6,7 +6,7 @@ import './body_left.css'
 
 let update=(name,filter,SetFilter)=>
 {
-  if(filter.indexOf(name)==-1)
+  if(filter.indexOf(name)===-1)
   {
     SetFilter([...filter,name])
   }
@@ -39,8 +39,8 @@ let Filter=()=>
             <h3>Brand</h3>
             <p onClick={()=>update("Realme",filter,SetFilter)}>realme</p>
             <p onClick={()=>update("redmi",filter,SetFilter)}>Mi</p>
-            <p onClick={()=>update("OnePlus",filter,SetFilter)}>OnePlus</p>
-            <p onClick={()=>update("SAMSUNG",filter,SetFilter)}> SAMSUNG</p>
+            <p onClick={()=>update("oneplus",filter,SetFilter)}>OnePlus</p>
+            <p onClick={()=>update("samsung",filter,SetFilter)}> SAMSUNG</p>
            <p onClick={()=>update("lg",filter,SetFilter)}>LG</p>
             <p onClick={()=>update("sony",filter,SetFilter)}> SONY</p>
             <p onClick={()=>update("infinix",filter,SetFilter)}>Infinix</p>

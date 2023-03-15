@@ -60,19 +60,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bold;
+}
+.addcart:hover
+{
+    background-color: white;
 }
 .buycart
 {
     display: flex;
     justify-content: center;
     align-items: center;
-   
    background-color: #FF5733;
    border-radius: 2px;
    margin:5px;
    height: 40px;
     text-align: center;
     width: 50%;
+}
+.buycart:hover
+{
+    background-color: white;
 }
 .addcart p
 {
