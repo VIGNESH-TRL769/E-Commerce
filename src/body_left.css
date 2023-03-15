@@ -1,0 +1,75 @@
+
+.body_left
+{
+    width: 20%;
+    background-color:rgb(23, 23, 41);
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top:11%;   
+}
+.category
+{
+    text-align: center;
+}
+.category button
+{
+    margin-left: 10px;
+    height: 30px;
+    width: 70px;
+}
+.search
+{
+    display: flex;
+    justify-content: center;
+}
+.search input
+{
+    height: 35px;
+    width: 70%;
+    border-radius: 10px;  
+}
+.brand,.heading 
+{
+    text-align: center;
+}
+.screen button
+{
+    margin-left: 30px;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    background-color: #FFC300;
+    border: 3px solid black;
+}
+
+.inches button
+{
+   padding: 7px 15px;
+   margin-left: 10px; 
+   background-color: #FFC300;
+   border-radius: 5px;
+   border: 3px solid black;
+
+}
+.inches button:hover
+{
+    background-color: #FF5733;
+}
+.screen button:hover
+{
+    background-color: #FF5733;
+}
+.brand a,.screen a,.inches a
+{
+    text-decoration: none;
+    color: white;
+}
+.prevbutton
+{
+    position: relative;
+    margin-top: 150px;
+    
+    width: 60px;
+    height: 30px;
+}
