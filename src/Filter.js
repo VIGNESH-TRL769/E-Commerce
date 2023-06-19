@@ -22,12 +22,11 @@ let update=(name,filter,SetFilter)=>
 let Filter=()=>
 {
   const {filter,SetFilter} = useContext(filterContext)
-  console.log(filter)
     return(
         <div class="body_left">
         <h3 class="heading">Search</h3>
         <div class="search">   
-          <input type="search"></input>
+          <input type="search" ></input>
         </div>
         <div class="screen">
             <h3 class="heading">Screen</h3>

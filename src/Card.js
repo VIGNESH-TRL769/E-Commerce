@@ -3,7 +3,7 @@ import { useContext } from "react";
 import './Header.css';
 import {Link} from 'react-router-dom';
 import { cartContext } from './App';
-let Card=(props)=>
+let Card=()=>
 {
     const {newArray} = useContext(cartContext)
     

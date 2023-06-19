@@ -3,7 +3,7 @@ import Products from './Products'
 import Header from './Header'
 import Viewpage from './Viewpage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { createContext, useEffect, useState } from 'react';
+import { createContext,useState } from 'react';
 
 export const cartContext = createContext()
 export const filterContext = createContext()
@@ -31,8 +31,6 @@ function App()
  {
   const [newArray, setMyArray] = useState([]);
   const[filter,SetFilter] = useState([])
-
-  useEffect(()=>{console.log(newArray)},[newArray,setMyArray])
   return(
     <>
     <cartContext.Provider value={{newArray,setMyArray}}>
@@ -43,7 +41,7 @@ function App()
             <Header ></Header>
             <Filter></Filter>
             <Products item={arr} ></Products></>}/>
-            <Route exact path="/Cart" element={<><Viewpage  newArray={newArray} item={newArray}></Viewpage></>}/>
+            <Route exact path="/Cart" element={<><Viewpage item={newArray}></Viewpage></>}/>
          </Routes>
       </BrowserRouter>
       </filterContext.Provider>

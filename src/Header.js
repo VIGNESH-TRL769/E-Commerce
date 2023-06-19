@@ -1,14 +1,16 @@
 import './Header.css';
 import Card from './Card'
-let Header=(props)=>
+import { Link } from 'react-router-dom';
+
+let Header=()=>
  {
   return (
   
     <div className="header">
         <div className="left_head">
-          <h1>TV ShowRoom</h1>
+        <Link to="/"> <h1 class="head">TV ShowRoom</h1></Link>
         </div>
-        <div className="right_head">
+        <div className="right_head" >
           <p>Home</p>
           <p>About</p>
           <p>Contact</p>

@@ -7,11 +7,13 @@ let update=(i,newArray,setMyArray)=>
   if(newArray.indexOf(i)===-1)
   {
     setMyArray([...newArray,i])
+    
   }
   else{
     let temp = [...newArray]
     temp.splice(temp.indexOf(i),1)
     setMyArray(temp)
+  
    
   }
   console.log(newArray)
@@ -20,6 +22,7 @@ let update=(i,newArray,setMyArray)=>
 const callbutton = (array,id) =>{
   
   return array.indexOf(id)===-1;
+ 
 }
 let Products=(props)=>
 {
@@ -48,8 +51,11 @@ let Products=(props)=>
                 </div>
             </div>
         )
-      }else{
-        if(filter.indexOf(i.inch) !==-1 || filter.indexOf(i.name) !==-1 || filter.indexOf(i.Screen) !==-1){
+      }else
+      {
+
+        if(filter.indexOf(i.inch) !==-1 || filter.indexOf(i.name) !==-1 || filter.indexOf(i.Screen) !==-1)
+        {
           return (
             <div key={i.id} className="container">
                   <div className="content">
@@ -63,14 +69,17 @@ let Products=(props)=>
                       <p className="price"><b>{i.Rate}</b></p>
                       </div>
                       <div className="cart">
-                      <button className="addcart" onClick={()=>update(i,newArray,setMyArray)}>{callbutton(newArray,i)?"Add To Cart":"Remove To Cart"}</button>
+                      <button className="addcart"  onClick={()=>update(i,newArray,setMyArray)}>{callbutton(newArray,i)?"Add To Cart":"Remove To Cart"}</button>
                       <button className="buycart"><b>Buy Now</b></button>
                       </div>
                   </div>
               </div>
           )
         }
-      }})
+       
+       
+      }
+    })
      } 
      </div>
      

@@ -1,9 +1,10 @@
 
+
 .header
 {
     background-color:black;
     color: white;
-    margin-top: 20px;
+  
     text-align: center;
     width: 100%;
     display: flex;
@@ -33,6 +34,7 @@
 {
     display: flex;
     width: 40%;
+    cursor: pointer;
 }
 .right_head p
 {
@@ -65,4 +67,18 @@
 {
     cursor: pointer;
     text-decoration: none;
+    color: white;
+}
+.cardicon:hover
+{
+    color:#FFC300;
+}
+.head
+{
+    text-decoration: none;
+    color: white;
+}
+.head:hover
+{
+    color:#FFC300;
 }

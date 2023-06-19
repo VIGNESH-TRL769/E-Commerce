@@ -4,17 +4,19 @@
     height: 53%;
     margin: 20px;
     position: relative;
-    top:10%;
+    top:30%;
 
 }
 .body_right
 {
     width: 80%;
-    height: 100vh;
+    height: 100%;
     display:flex;
     flex-wrap: wrap;
     position: relative;
     left:20%;
+    padding-top: 70px;
+   
  
     
 }
@@ -62,6 +64,10 @@
     align-items: center;
     font-weight: bold;
 }
+.addcart #remove
+{
+    background-color: aqua;
+}
 .addcart:hover
 {
     background-color: white;
@@ -94,3 +100,14 @@
     border: 2px solid black;
     width: 50%;
 }
+.position
+{
+    display: flex;   
+}
+.nodata
+{
+    text-align: center;
+    color: red;
+    
+}
+
