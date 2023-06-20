@@ -24,10 +24,6 @@ let Filter=()=>
   const {filter,SetFilter} = useContext(filterContext)
     return(
         <div class="body_left">
-        <h3 class="heading">Search</h3>
-        <div class="search">   
-          <input type="search" ></input>
-        </div>
         <div class="screen">
             <h3 class="heading">Screen</h3>
            <button onClick={()=>update("LED",filter,SetFilter)}>LED</button> 
